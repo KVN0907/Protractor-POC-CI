@@ -13,30 +13,28 @@ exports.config = {
         'browserName': 'chrome',
         chromeOptions: {
              prefs: {
-               /*  download: {
+                download: {
                     'prompt_for_download': false,
                     'directory_upgrade': true,
-                    'default_directory': process.cwd() + './e2e/download',
+                    'default_directory': process.cwd() + './tests-e2e/download',
                     default_content_settings: {
                         'popups': 0
                     }
 
-                }*/
+                }
             },
-            /*args: [
+            args: [
                 "--headless",
                 "--disable-gpu",
                 "--window-size=1920,1080",
                 "--no-sandbox",
                 "--disable-dev-shm-usage"
             ],
-             */
+             
 
         }
     },
     directConnect: true,
-    baseUrl: 'https://app-dev.supplierpayments.com',
-    awsUrl: '',
     framework: 'jasmine',
     jasmineNodeOpts: {
         showColors: true,

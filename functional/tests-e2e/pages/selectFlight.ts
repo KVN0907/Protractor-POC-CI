@@ -18,9 +18,9 @@ export class selectFlight {
 
     async selectFlight(){
 
-        await this.refundableWE.click();
-        //await browser.wait(this.EC.elementToBeClickable(this.refundableWE),5000);
-        this.refundableWE.click();
+        
+        await browser.wait(this.EC.visibilityOf(this.refundableWE),10000);
+        await this.refundableWE.click(); 
         await this.nonStopWE.click();
         await browser.wait(this.EC.visibilityOf(this.felxFirstRadioWE),5000);
         this.felxFirstRadioWE.click();
@@ -28,6 +28,4 @@ export class selectFlight {
 
 
     }
-
-
 }

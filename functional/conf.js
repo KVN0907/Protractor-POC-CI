@@ -11,7 +11,7 @@ exports.config = {
   
     capabilities: {
         'browserName': 'chrome',
-        chromeOptions: {
+       /*  chromeOptions: {
              prefs: {
                 download: {
                     'prompt_for_download': false,
@@ -22,7 +22,7 @@ exports.config = {
                     }
 
                 }
-            },
+            }, */
           /*   args: [
                 "--headless",
                 "--disable-gpu",
@@ -32,7 +32,7 @@ exports.config = {
             ],
               */
 
-        }
+       // }
     },
     directConnect: true,
     framework: 'jasmine',

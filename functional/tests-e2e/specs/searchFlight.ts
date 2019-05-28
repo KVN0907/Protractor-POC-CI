@@ -24,7 +24,9 @@ describe ( 'To search for flights', () => {
     });
 
     afterAll(async () => {
-      browser.quit();
+     setTimeout(function() {
+       browser.quit()
+     },100)
     }); 
 
 it ( 'Should search with given data', async () =>{

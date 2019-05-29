@@ -15,8 +15,9 @@ exports.config = {
         'browserName': 'firefox'
       }], */
      capabilities: {
-        'browserName': 'chrome',
-         chromeOptions: {
+        'browserName': 'firefox',
+        
+         /* chromeOptions: {
             prefs: {
                 download: {
                     'prompt_for_download': false,
@@ -37,7 +38,7 @@ exports.config = {
             ],
             
 
-        } 
+        }  */
     }, 
     directConnect: true,
     baseUrl: '',

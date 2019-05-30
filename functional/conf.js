@@ -16,6 +16,14 @@ exports.config = {
       }], */
      capabilities: {
         'browserName': 'firefox',
+        'moz:firefoxOptions': {
+            args: [
+                '-headless'
+            ]
+        },
+        log: {
+            level: 'trace'
+        }
         
          /* chromeOptions: {
             prefs: {

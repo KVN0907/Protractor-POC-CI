@@ -13,7 +13,7 @@ describe ( 'To search for flights', () => {
     beforeAll(async () => {
         tdata = new testDataPoc();
         homePagePO = new homePagePoc();
-       // selectFlightPO = new selectBus();
+        selectFlightPO = new selectBus();
         browser.driver.manage().window().maximize();
         browser.get(tdata.url.appUrl)
          });

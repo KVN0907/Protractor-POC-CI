@@ -9,15 +9,23 @@ exports.config = {
     specs: [
         './tests-e2e/specs/*.ts',
     ],
-    multiCapabilities: [{
+    /* multiCapabilities: [{
         'browserName': 'chrome'
       }, {
         'browserName': 'firefox'
-      }],
-   /*  mutliplecapabilities: {
+      }], */
+     capabilities: {
         'browserName': 'firefox',
-        'browserName': 'chrome'
-        chromeOptions: {
+        'moz:firefoxOptions': {
+            args: [
+                '-headless'
+            ]
+        },
+        log: {
+            level: 'trace'
+        }
+        
+         /* chromeOptions: {
             prefs: {
                 download: {
                     'prompt_for_download': false,
@@ -38,8 +46,8 @@ exports.config = {
             ],
             
 
-        } 
-    }, */
+        }  */
+    }, 
     directConnect: true,
     baseUrl: '',
     awsUrl: '',

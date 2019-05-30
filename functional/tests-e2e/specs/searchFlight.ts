@@ -1,7 +1,7 @@
 import { testDataPoc } from "../data/testDataPoc";
 import { homePagePoc } from "../pages/homePagePoc";
 import { browser } from "protractor";
-import { selectBus } from "../pages/selectBus";
+import { selectBus } from "../pages/selectbus";
 
 
 describe ( 'To search for flights', () => {

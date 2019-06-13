@@ -1,19 +1,19 @@
-import { testDataPoc } from "../data/testDataPoc";
-import { homePagePoc } from "../pages/homePagePoc";
+import { testData } from "../data/testData";
+import { homePage } from "../pages/homePage";
 import { browser } from "protractor";
-import { selectBus } from "../pages/selectbus";
+import { selectFlight } from "../pages/selectFlight";
 
 
 describe ( 'To search for flights', () => {
     
-    let tdata :testDataPoc;
-    let homePagePO : homePagePoc;
-    let selectFlightPO : selectBus;
+    let tdata :testData;
+    let homePagePO : homePage;
+    let selectFlightPO : selectFlight;
 
     beforeAll(async () => {
-        tdata = new testDataPoc();
-        homePagePO = new homePagePoc();
-        selectFlightPO = new selectBus();
+        tdata = new testData();
+        homePagePO = new homePage();
+        selectFlightPO = new selectFlight();
         browser.driver.manage().window().maximize();
         browser.get(tdata.url.appUrl)
          });
@@ -31,9 +31,9 @@ describe ( 'To search for flights', () => {
 
 it ( 'Should search with given data', async () =>{
 
-       // homePagePO.searchFlight(tdata.flightDetails.from,tdata.flightDetails.to);
-        homePagePO.bookTicket();
-        selectFlightPO.selectFlight(tdata.travelDetails.from,tdata.travelDetails.to);
+       homePagePO.searchFlight(tdata.flightDetails.from,tdata.flightDetails.to);
+       selectFlightPO.selectFlight();
+    
 
 
 });

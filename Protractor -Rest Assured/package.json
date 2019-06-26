@@ -1,0 +1,29 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "API Automation With NPM",
+  "main": "APIdemo.js",
+  "dependencies": {
+    "@types/jasmine": "^3.3.13",
+    "@types/node": "^12.0.10",
+    "jasmine": "^3.4.0",
+    "protractor": "^5.4.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "request-promise-native": "^1.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "GitHub"
+  },
+  "keywords": [
+    "API",
+    "request"
+  ],
+  "author": "Keerthivasan",
+  "license": "ISC"
+}

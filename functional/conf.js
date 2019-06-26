@@ -7,7 +7,7 @@ var HtmlReporter = require('protractor-beautiful-reporter');
 exports.config = {
     allScriptsTimeout: 60000,
     specs: [
-        './tests-e2e/specs/searchFlight.ts',
+       './tests-e2e/specs/searchFlight.ts',
     ],
     /* multiCapabilities: [{
         'browserName': 'chrome'
@@ -16,14 +16,14 @@ exports.config = {
       }], */
      capabilities: {
         'browserName': 'firefox',
-        //'moz:firefoxOptions': {
-           /*  args: [
+        'moz:firefoxOptions': {
+             args: [
                 '-headless'
-            ] */
-        //},
+            ] 
+        },
         log: {
             level: 'trace'
-        }
+        },
         
          /* chromeOptions: {
             prefs: {
@@ -48,6 +48,11 @@ exports.config = {
             
 
         }  */
+        specs: [
+            './tests-e2e/specs/searchFlight.ts', './tests-e2e/specs/searchBus.ts'
+        ],
+        maxInstances : 5,
+        shardTestFiles: true,
     }, 
     directConnect: true,
     baseUrl: '',

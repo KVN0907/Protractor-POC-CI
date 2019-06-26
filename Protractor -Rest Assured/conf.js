@@ -1,9 +1,5 @@
-exports.config = {
-    //seleniumAddress: 'http://localhost:4444/wd/hub',
-    //directConnet: true,
-    /* capabilities: {
-      'browserName': 'chrome'
-      }, */
+export const config = {
+    
     framework: 'jasmine',
     specs: ['TestDemo.js'],
     jasmineNodeOpts: {

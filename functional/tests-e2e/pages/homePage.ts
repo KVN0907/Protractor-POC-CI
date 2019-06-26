@@ -1,4 +1,5 @@
 import {browser, by, element, ElementArrayFinder, ElementFinder, ExpectedConditions} from 'protractor';
+import { async } from 'q';
 
 export class homePage {
 
@@ -44,20 +45,30 @@ export class homePage {
         await this.fromPlaceWE.sendKeys(from);
         await this.toDesttinationWE.sendKeys(to);
         //const d: Date = new Date().toDateString();
-        await this.departDateWE.sendKeys("06/18/2019");
-        await this.travellerDropDownWE.click();
+        await this.departDateWE.sendKeys("07/18/2019");
+       /*  await this.travellerDropDownWE.click();
         for(let i=1;i<=2;i++)
         {
         await this.childWE.click();
         }
-        await this.travellerDropDownWE.click();
+        await this.travellerDropDownWE.click(); */
        /*  await browser.wait(this.EC.elementToBeClickable(this.searchButtonWE),10000)
         browser.navigate().to("https://book.jetblue.com/B6/webqtrip.html");
         await this.searchButtonWE.click().then();
         browser.manage().timeouts().implicitlyWait(5000);
         browser.sleep(5000);
- */
-        await this.searchButtonWE.click();
+ */      
+       
+        await this.searchButtonWE.click().then(response => console.log(response)).
+                catch(error =>console.error(error));
+        
+                browser.ignoreSynchronization= true;
+        var title = browser.getTitle().then(function(pageTitle){
+
+                expect(pageTitle).toEqual("Flight Selection")
+                console.log(title);
+
+        });
     }
 
     async bookFlight(){

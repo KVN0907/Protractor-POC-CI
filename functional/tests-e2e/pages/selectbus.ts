@@ -40,6 +40,6 @@ export class selectBus {
         await this.dateWE.click();
         await this.searchWE.click();
         await browser.wait(this.EC.visibilityOf(this.showWE),5000);
-        expect(await this.showWE.getText()).toContain("Show")
+        expect(await this.showWE.getText()).toContain("Showing")
     }
 }

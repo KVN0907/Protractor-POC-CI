@@ -25,6 +25,7 @@ export class selectFlight {
         await browser.wait(this.EC.visibilityOf(this.felxFirstRadioWE),5000);
         this.felxFirstRadioWE.click();
         await this.continueWE.click();
+        console.log("Flight Selected");
 
 
     }

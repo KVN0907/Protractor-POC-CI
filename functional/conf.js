@@ -15,17 +15,17 @@ exports.config = {
         'browserName': 'firefox'
       }], */
      capabilities: {
-        'browserName': 'firefox',
-        'moz:firefoxOptions': {
+        'browserName': 'chrome',
+       /*  'moz:firefoxOptions': {
              args: [
                 '-headless'
             ] 
         },
         log: {
             level: 'trace'
-        },
+        }, */
         
-         /* chromeOptions: {
+         chromeOptions: {
             prefs: {
                 download: {
 
@@ -47,13 +47,13 @@ exports.config = {
             ],
             
 
-        }  */
-        specs: [
+        }  ,
+       /*  specs: [
             './tests-e2e/specs/searchFlight.ts', './tests-e2e/specs/searchBus.ts'
         ],
         maxInstances : 5,
         shardTestFiles: true,
-    }, 
+    },  */
     directConnect: true,
     baseUrl: '',
     awsUrl: '',

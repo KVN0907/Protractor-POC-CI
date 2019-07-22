@@ -1,11 +1,11 @@
-var Request = require("request");
+//var Request = require("request");
 var rp = require("request-promise");
 describe("Errors in Protractor",function(){
  // browser.ignoreSynchronization = true; // for non-angular websites
   it("Error handleing in protractor",function(done){
-Request.headers={"content-type": "application/json" }
+//Request.headers={"content-type": "application/json" }
 //Request.url="https://jsonplaceholder.typicode.com/";
-    Request.get({
+   rp.get({
       "url":"https://jsonplaceholder.typicode.com/",
     "path": "users/1"
 

@@ -1,7 +1,5 @@
-import { browser, element, by } from "protractor";
 var Request = require("request");
-var rp = require("request-promise")
-rp.
+var rp = require("request-promise");
 describe("Errors in Protractor",function(){
  // browser.ignoreSynchronization = true; // for non-angular websites
   it("Error handleing in protractor",function(done){

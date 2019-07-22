@@ -4,6 +4,7 @@
   "description": "Protractor Automation",
   "main": "index.js",
   "scripts": {
+    "pretest": "webdriver-manager update",
     "test": "protractor conf.js"
   },
   "repository": {

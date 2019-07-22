@@ -15,7 +15,7 @@ exports.config = {
         'browserName': 'firefox'
       }], */
      capabilities: {
-        'browserName': 'chrome',
+        'browserName': 'firefox',
      },
         /* 'moz:firefoxOptions': {
               args: [

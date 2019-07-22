@@ -16,16 +16,17 @@ exports.config = {
       }], */
      capabilities: {
         'browserName': 'chrome',
-       /*  'moz:firefoxOptions': {
-             args: [
+     },
+        /* 'moz:firefoxOptions': {
+              args: [
                 '-headless'
-            ] 
+            ]  
         },
         log: {
             level: 'trace'
-        }, */
-        
-         chromeOptions: {
+        },
+    }, */
+         /* chromeOptions: {
             prefs: {
                 download: {
 
@@ -47,7 +48,7 @@ exports.config = {
             ],
             
 
-        }  ,
+        }  */
        /*  specs: [
             './tests-e2e/specs/searchFlight.ts', './tests-e2e/specs/searchBus.ts'
         ],
@@ -87,5 +88,4 @@ exports.config = {
         }).getJasmine2Reporter());
     },
 
-},
-}
+};

@@ -18,7 +18,7 @@ export class selectFlight {
 
     async selectFlight(){
 
-        
+        browser.sleep(7000);
         await browser.wait(this.EC.visibilityOf(this.refundableWE),10000);
         await this.refundableWE.click(); 
         await this.nonStopWE.click();

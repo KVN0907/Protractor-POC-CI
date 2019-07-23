@@ -13,6 +13,28 @@ exports.config = {
    
      capabilities: {
         'browserName': 'chrome',
+	     chromeOptions: {
+            prefs: {
+                download: {
+                    'prompt_for_download': false,
+                    'directory_upgrade': true,
+                    'default_directory': process.cwd() + './e2e/download',
+                    default_content_settings: {
+                        'popups': 0
+                    }
+
+                }
+            },
+            args: [
+                "--headless",
+                "--disable-gpu",
+                "--window-size=1920,1080",
+                "--no-sandbox",
+                "--disable-dev-shm-usage"
+            ],
+            
+
+        }
      },
            directConnect: true,
     baseUrl: '',

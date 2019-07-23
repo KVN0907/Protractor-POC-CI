@@ -12,7 +12,7 @@ exports.config = {
     ],
    
      capabilities: {
-        'browserName': 'firefox',
+        'browserName': 'chrome',
      },
            directConnect: true,
     baseUrl: '',

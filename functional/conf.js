@@ -7,8 +7,8 @@ var HtmlReporter = require('protractor-beautiful-reporter');
 exports.config = {
     allScriptsTimeout: 60000,
     specs: [
-       './tests-e2e/specs/searchFlight.ts',
-       '..tests-e2e/specs/searchBus.ts'
+      // './tests-e2e/specs/searchFlight.ts',
+       './tests-e2e/specs/searchBus.ts'
     ],
    
      capabilities: {
@@ -36,12 +36,12 @@ exports.config = {
         });
 
         jasmine.getEnv().addReporter(new HtmlReporter({
-            preserveDirectory: true,
+            preserveDirectory: false,
             takeScreenShotsOnlyForFailedSpecs: true,
             screenshotsSubfolder: 'Screenshot',
             jsonsSubfolder: 'Json',
             baseDirectory: './reports',
-            gatherBrowserLogs: false,
+            gatherBrowserLogs: true,
             docTitle: 'QAOPS_POC',
                       
         }).getJasmine2Reporter());

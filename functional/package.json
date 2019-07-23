@@ -4,7 +4,7 @@
   "description": "Protractor Automation",
   "main": "index.js",
   "scripts": {
-   // "pretest": "webdriver-manager update  --versions.gecko=v0.21.0",
+  
     "test": "protractor conf.js"
   },
   "repository": {

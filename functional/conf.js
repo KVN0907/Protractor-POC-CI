@@ -8,54 +8,13 @@ exports.config = {
     allScriptsTimeout: 60000,
     specs: [
        './tests-e2e/specs/searchFlight.ts',
+       '..tests-e2e/specs/searchBus.ts'
     ],
-    /* multiCapabilities: [{
-        'browserName': 'chrome'
-      }, {
-        'browserName': 'firefox'
-      }], */
+   
      capabilities: {
         'browserName': 'firefox',
      },
-        /* 'moz:firefoxOptions': {
-              args: [
-                '-headless'
-            ]  
-        },
-        log: {
-            level: 'trace'
-        },
-    }, */
-         /* chromeOptions: {
-            prefs: {
-                download: {
-
-                    'prompt_for_download': false,
-                    'directory_upgrade': true,
-                    'default_directory': process.cwd() + './tests-e2e/download',
-                    default_content_settings: {
-                        'popups': 0
-                    }
-
-                }
-            },
-            args: [
-                "--headless",
-                "--disable-gpu",
-                "--window-size=1920,1080",
-                "--no-sandbox",
-                "--disable-dev-shm-usage"
-            ],
-            
-
-        }  */
-       /*  specs: [
-            './tests-e2e/specs/searchFlight.ts', './tests-e2e/specs/searchBus.ts'
-        ],
-        maxInstances : 5,
-        shardTestFiles: true,
-    },  */
-    directConnect: true,
+           directConnect: true,
     baseUrl: '',
     awsUrl: '',
     framework: 'jasmine2',
@@ -77,13 +36,13 @@ exports.config = {
         });
 
         jasmine.getEnv().addReporter(new HtmlReporter({
-            preserveDirectory: false,
+            preserveDirectory: true,
             takeScreenShotsOnlyForFailedSpecs: true,
             screenshotsSubfolder: 'Screenshot',
             jsonsSubfolder: 'Json',
             baseDirectory: './reports',
             gatherBrowserLogs: false,
-            docTitle: 'Protractor_POC',
+            docTitle: 'QAOPS_POC',
                       
         }).getJasmine2Reporter());
     },

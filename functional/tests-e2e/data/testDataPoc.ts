@@ -6,7 +6,7 @@ export class testDataPoc{
 
     travelDetails = {
             from:'Bangalore',
-            to:'Coimbatore'
+            to:'Coimbator'
         };
     
 }

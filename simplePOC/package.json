@@ -1,0 +1,37 @@
+{
+  "name": "protractor-poc",
+  "version": "1.0.0",
+  "description": "Protractor Automation",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "webdriver-manager update",
+    "test": "protractor conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Git"
+  },
+  "keywords": [
+    "protractor",
+    "typescript",
+    "jasmine",
+    "chai"
+  ],
+  "private": false,
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jasmine": "^2.8.16",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^9.3.0",
+    "moment": "^2.14.1",
+    "ngc": "^1.0.0",
+    "protractor": "^5.4.2",
+    "protractor-beautiful-reporter": "^1.2.7",
+    "ts-node": "^4.1.0",
+    "tsickle": "^0.27.2",
+    "tslint": "^5.9.1",
+    "typescript": "^2.6.2"
+  },
+  "author": "Keerthivasan",
+  "license": "ISC"
+}
